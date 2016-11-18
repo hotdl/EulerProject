@@ -4,5 +4,5 @@
 #
 # What is the sum of the digits of the number 21000?
 
-print reduce(lambda x,y:int(x)+int(y),str(2**1000))
+print sum(map(int,str(2**1000)))
 
