@@ -11,3 +11,10 @@ def isPrime(num):
         if num % x == 0:
             return False
     return True
+
+def union_dict(dict1, dict2):
+    for k, v in dict2.items():
+        if k in dict1.keys():
+            dict1[k] += v
+        else:
+            dict1[k] = v
