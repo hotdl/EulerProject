@@ -18,3 +18,12 @@ def union_dict(dict1, dict2):
             dict1[k] += v
         else:
             dict1[k] = v
+
+def calc_divisors(num):
+    divisors = []
+    for i in range(1, int(num**0.5)+1):
+        if num % i == 0:
+            divisors.append(i)
+            if i*i != num:
+                divisors.append(num/i)
+    return divisors

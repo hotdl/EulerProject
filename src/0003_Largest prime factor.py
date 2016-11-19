@@ -5,7 +5,9 @@
 # What is the largest prime factor of the number 600851475143 ?
 
 import math
+
 import common
+
 
 def next_prime(num):
     if num % 2 == 0 and num != 2:
