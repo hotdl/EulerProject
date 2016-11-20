@@ -9,7 +9,7 @@ import common
 def next_prime(num):
     if num % 2 == 0 and num != 2:
         num += 1
-    while not common.isPrime(num):
+    while not common.is_prime(num):
         num += 2
     return num
 

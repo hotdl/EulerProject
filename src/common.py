@@ -1,6 +1,6 @@
 import math
 
-def isPrime(num):
+def is_prime(num):
     if num < 2:
         return False
     if num == 2:

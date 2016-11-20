@@ -28,7 +28,7 @@ def join_dict(dict1, dict2):
 
 def calc_prime_factor(num, dict):
     for i in range(2, num+1):
-        if num % i == 0 and common.isPrime(i):
+        if num % i == 0 and common.is_prime(i):
             add_count(dict, i)
             calc_prime_factor(num/i, dict)
             break
