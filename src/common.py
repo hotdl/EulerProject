@@ -1,4 +1,6 @@
 import math
+import time
+import functools
 
 def is_prime(num):
     if num < 2:
@@ -27,3 +29,13 @@ def calc_divisors(num):
             if i*i != num:
                 divisors.append(num/i)
     return divisors
+
+def costtime(func):
+    @functools.wraps(func)
+    def ff(*args, **keys):
+        st = time.time()
+        res = func(*args, **keys)
+        print "Cost time: %s" % (time.time()-st)
+        return res
+    return ff
+
