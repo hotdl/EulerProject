@@ -39,3 +39,9 @@ def costtime(func):
         return res
     return ff
 
+def gcd(x, y):
+    n1 = max(x, y)
+    n2 = min(x, y)
+    while n2 > 0:
+        n1, n2 = n2, n1 % n2
+    return n1
